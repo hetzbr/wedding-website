@@ -19,10 +19,12 @@ const Hero: React.FC = () => {
     };
   }, []);
 
+  const baseURL = process.env.NODE_ENV === 'production' ? '/wedding-website/' : '/';
+
   return (
     <Box className="hero" id="hero">
       <img
-        src="/images/bridge.jpg" // Replace with your image path
+        src={`${baseURL}images/bridge.jpg`} // Replace with your image path
         alt="Hero Background"
         className="hero-image"
         style={{
