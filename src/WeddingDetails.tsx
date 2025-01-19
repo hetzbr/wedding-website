@@ -9,7 +9,7 @@ const WeddingDetails: React.FC = () => {
         <div className="left-column">
           <Typography variant="h3">Wedding Details</Typography>
           <Typography variant="h5">Wedding Date</Typography>
-          <Typography variant="body1">November 7th, 2025</Typography>
+          <Typography variant="body1">November 8th, 2025</Typography>
           <div>
           <br />
             <Typography variant="h5">Reception Location</Typography>
