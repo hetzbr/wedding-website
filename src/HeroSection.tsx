@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
     };
   }, []);
 
-  const baseURL = process.env.NODE_ENV === 'production' ? '/wedding-website/' : '/';
+  const baseURL = '/';
 
   return (
     <Box className="hero" id="hero">
