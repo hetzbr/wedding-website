@@ -1,3 +1,9 @@
+name: Deploy Vite app to GitHub Pages
+on:
+  push:
+    branches:
+      - main  # This will trigger the workflow when you push to the main branch
+
 jobs:
   build:
     runs-on: ubuntu-latest
