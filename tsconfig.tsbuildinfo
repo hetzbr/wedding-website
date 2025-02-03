@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/footer.tsx","./src/gettingthere.tsx","./src/herosection.tsx","./src/navbar.tsx","./src/registry.tsx","./src/weddingdetails.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
+{"root":["./src/app.tsx","./src/footer.tsx","./src/gettingthere.tsx","./src/herosection.tsx","./src/localsites.tsx","./src/navbar.tsx","./src/registry.tsx","./src/weddingdetails.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.3"}
