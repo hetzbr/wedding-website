@@ -1,0 +1,38 @@
+name: Deploy Vite app to GitHub Pages
+on:
+  push:
+    branches:
+      - main  # This will trigger the workflow when you push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20.18.1'  # Updated Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the site
+      run: npm run build  # This runs `vite build` to generate the dist folder
+
+    - name: Add CNAME file for custom domain
+      run: echo 'www.benandcharlottewedding.com' > dist/CNAME  # Updated custom domain
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages  # The branch to deploy to
+        folder: dist  # The folder containing the build files (dist)
+        token: ${{ secrets.GITHUB_TOKEN }}  # Token for deployment
