@@ -1,9 +1,9 @@
-$primary-color: #122a45;
+$primary-color: #95B2B0;
 $accent-color: #FFF;
 $font-family-default: 'fraunces', sans-serif;
 $font-family-header: 'Great Vibes', cursive;
 
-.wedding-details {
+.getting-there {
   padding: 4rem 2rem;
   background-color: $primary-color;
   color: $accent-color;
@@ -11,7 +11,7 @@ $font-family-header: 'Great Vibes', cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 690px;
+  min-height: 300px;
   transition: min-height 0.3s ease;
   margin-bottom: 0;
 
@@ -22,7 +22,6 @@ $font-family-header: 'Great Vibes', cursive;
     justify-content: space-between;
     gap: 2rem;
     margin: 0 auto;
-    max-width: 240px;
 
     @media (min-width: 768px) {
       align-items: flex-start;
@@ -37,23 +36,58 @@ $font-family-header: 'Great Vibes', cursive;
     }
   }
 
-  .left-column,
+  // .content {
+  //   align-items: center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   gap: 2rem;
+  //   margin: 0 auto;
+
+  //   @media (min-width: 768px) {
+  //     align-items: flex-start;
+  //     display: flex;
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     gap: 2rem;
+  //     max-width: 1200px;
+  //     margin: 0 auto;
+  //     flex-wrap: wrap;
+  //     text-align: left;
+  //   }
+  // }
+
+  .left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 240px;
+
+    @media (min-width: 768px) {
+      max-width: 1200px;
+    }
+  }
+
   .right-column {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   h3 {
     font-family: $font-family-header;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
     color: $accent-color;
+    margin-bottom: 1.5rem;
   }
 
   h5 {
     font-family: $font-family-default;
     font-size: 1.8rem;
-    margin-bottom: 1rem;
     color: $accent-color;
+    margin-bottom: 1rem;
   }
 
   h6 {
@@ -80,10 +114,12 @@ $font-family-header: 'Great Vibes', cursive;
 
     h3 {
       font-size: 2.5rem;
+      margin-bottom: 0rem;
     }
 
     h5 {
       font-size: 1.5rem;
+      margin-bottom: 0rem;
     }
 
     p {
@@ -93,6 +129,7 @@ $font-family-header: 'Great Vibes', cursive;
     .left-column,
     .right-column {
       flex: 1;
+      width: 100%;
       margin-bottom: 1rem;
     }
 
@@ -100,11 +137,22 @@ $font-family-header: 'Great Vibes', cursive;
       padding-left: 0;
     }
   }
+}
 
-  a {
-    color: $accent-color;
-    text-decoration-color: $accent-color;
-    font-size: 1.2rem;
-    font-weight: 600;
+.getting-there__link {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.getting-there-right {
+  width: 100%;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    border: 0;
   }
 }

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Box } from '@mui/material';
-import './HeroSection.scss'; // Import the SCSS file for styling
+import './HeroSection.scss';
 
 const Hero: React.FC = () => {
   const [scrollY, setScrollY] = useState(0);
 
-  // Smooth scroll update using requestAnimationFrame
   const handleScroll = () => {
     window.requestAnimationFrame(() => {
       setScrollY(window.scrollY);
@@ -24,11 +23,11 @@ const Hero: React.FC = () => {
   return (
     <Box className="hero" id="hero">
       <img
-        src={`${baseURL}images/bridge.jpg`} // Replace with your image path
+        src={`${baseURL}images/bridge.jpg`}
         alt="Hero Background"
         className="hero-image"
         style={{
-          transform: `translateY(${scrollY * 0.5}px)`, // Slightly adjusted multiplier for smoother effect
+          transform: `translateY(${scrollY * 0.5}px)`,
         }}
       />
     </Box>

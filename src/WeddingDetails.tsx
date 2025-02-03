@@ -1,6 +1,6 @@
 import React from 'react';
-import './WeddingDetails.scss'; // Import Sass stylesheet
 import { Box, Typography, Link } from '@mui/material';
+import './WeddingDetails.scss';
 
 const WeddingDetails: React.FC = () => {
   return (
@@ -10,25 +10,30 @@ const WeddingDetails: React.FC = () => {
           <Typography variant="h3">Wedding Details</Typography>
           <Typography variant="h5">Wedding Date</Typography>
           <Typography variant="body1">November 8th, 2025</Typography>
-          <div>
           <br />
-            <Typography variant="h5">Reception Location</Typography>
-            <Typography variant="body1">
-              <Link href="https://www.copperhenkitchen.com/" target="_blank" className="wedding-details__link">
-                The Copper Hen
-              </Link>
-            </Typography>
-          </div>
+          <Typography variant="h5">Reception Location</Typography>
+          <Typography variant="body1">
+            <Link href="https://www.copperhenkitchen.com/" target="_blank" className="wedding-details__link">
+              The Copper Hen
+            </Link>
+            <br />
+            2515 Nicollet Ave
+            <br />
+            Minneapolis, MN 55404
+          </Typography>
         </div>
 
         <div className="right-column">
-          <Typography variant="h5">A Note from the Bride and Groom</Typography>
+          <Typography variant="h5">From the Bride and Groom</Typography>
           <Typography variant="body1">
-            Dear Friends and Family, We&apos;re so excited to have you join us as we celebrate this special day. Your love and support mean so much to us, and we are incredibly grateful to share this moment with the people who have played such an important role in our lives.
+            To our nearest and dearest,
+          <br />
+          <br />
+            Welcome to our wedding website! We hope this site will serve as a helpful guide in aiding the many people we love all over this country (MN, MA, FL, WI, NY, NH to name a few!) attend our “destination” wedding ;)
           </Typography>
           <br />
           <Typography variant="body1">
-            As we start this new chapter together, we look forward to the many memories we&apos;ll create with all of you. Thank you for being here and for all the ways you&apos;ve supported us along the way. Here&apos;s to an unforgettable celebration!
+            Please note, in the case the information you are looking for is missing, we will be periodically updating this page with more specific details as the big day gets closer. For now, please simply join us in counting down the days till we can celebrate with all the people we love!
           </Typography>
           <br />
           <Typography variant="body1">

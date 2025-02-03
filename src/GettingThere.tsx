@@ -1,21 +1,41 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
+import './GettingThere.scss';
 
 const GettingThere: React.FC = () => {
+  const googleMapsKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
   return (
-    <Box sx={{ padding: '50px 20px' }} id="getting-there">
-      <Typography variant="h4" sx={{ textAlign: 'center', mb: 4 }}>
-        Getting There
-      </Typography>
-      <Typography variant="h6" sx={{ textAlign: 'center', fontWeight: 600 }}>
-        Location
-      </Typography>
-      <Typography sx={{ textAlign: 'center', mt: 2 }}>
-        XYZ Venue, 1234 Wedding Rd, City, State, ZIP
-      </Typography>
-      <Typography sx={{ textAlign: 'center', mt: 2 }}>
-        For those flying in, the nearest airport is ABC International Airport, located 20 minutes away.
-      </Typography>
+    <Box className="getting-there">
+        <Box className="content">
+          <div className="left-column">
+            <Typography variant="h3" gutterBottom>
+              Where to Stay
+            </Typography>
+            <Typography variant="h5">Hyatt Downtown</Typography>
+            <Typography variant="body1">
+              We're currently in the process of finalizing a hotel block at the&nbsp;
+              <Link href="https://www.hyatt.com/hyatt-place/en-US/mspzd-hyatt-place-minneapolis-downtown" target="_blank" className="getting-there__link">
+                Hyatt Place Minneapolis/Downtown
+              </Link>
+              . Please check back at a later date to reserve your room!
+            </Typography>
+          </div>
+          <div className="right-column">
+            <Box className="getting-there-right">
+            <iframe
+              src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsKey}&q=Hyatt+Place+Minneapolis/Downtown,+Minneapolis,+MN`}
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Embed"
+            />
+            </Box>
+          </div>
+        </Box>
     </Box>
   );
 };
