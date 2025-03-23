@@ -3,15 +3,12 @@
 .hero {
   position: relative;
   height: 100vh; /* Full height of the viewport */
-  overflow: hidden; /* Prevent content overflow */
+  overflow-x: hidden; /* Prevent content overflow */
 }
 
 .hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover; /* Ensures the image covers the section */
 }
 

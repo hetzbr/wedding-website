@@ -1,0 +1,43 @@
+/* Reset basic styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure the background image covers the entire viewport without distortion */
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Removes any default inline spacing */
+}
+
+/* Optional overlay content to encourage scrolling */
+.overlay-content {
+  width: 100%;
+  text-align: center;
+  margin-top: 40vh;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Card container centers the card on the second page */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+}
