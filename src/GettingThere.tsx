@@ -18,7 +18,7 @@ const GettingThere: React.FC = () => {
               <Link href="https://www.hyatt.com/en-US/hotel/minnesota/hyatt-place-minneapolis-downtown/mspzd?corp_id=G-osln" target="_blank">
                 Hyatt Place Minneapolis/Downtown
               </Link>
-              . Use code G-OSLN for the group code (must be all capitals) when booking.
+              . Use code G-OLSN for the group code (must be all capitals) when booking.
             </Typography>
           </div>
           <div className="right-column">

@@ -5,11 +5,6 @@ import './Schedule.scss';
 const Schedule: React.FC = () => {
   return (
     <Box className="schedule">
-      {/* <div className="heading">
-        <Typography variant="h3" gutterBottom>
-          Schedule
-        </Typography>
-      </div> */}
       <div className="content">
         <div className="left-column">
         <Typography variant="h3" gutterBottom>
@@ -45,7 +40,6 @@ const Schedule: React.FC = () => {
               The big day!!
             </Typography>
             <div className="placeholder">placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</div>
-            {/* <Typography variant="h5" className="placeholder">placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</Typography> */}
         </div>
       </div>
     </Box>
