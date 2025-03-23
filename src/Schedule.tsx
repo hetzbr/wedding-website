@@ -44,7 +44,8 @@ const Schedule: React.FC = () => {
             <Typography variant="body1">
               The big day!!
             </Typography>
-            <Typography variant="h5" className="placeholder">placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</Typography>
+            <div className="placeholder">placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</div>
+            {/* <Typography variant="h5" className="placeholder">placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder</Typography> */}
         </div>
       </div>
     </Box>
