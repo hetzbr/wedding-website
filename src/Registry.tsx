@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material';
 import './Registry.scss';
 
 const Registry: React.FC = () => {
@@ -9,7 +9,7 @@ const Registry: React.FC = () => {
         <div className="left-column">
           <Typography variant="h3">Registry</Typography>
           <Typography variant="body1">
-          Your presence is the greatest gift, but if you'd like to contribute, we will update this section with a honeymoon fund at a later date.
+          Your presence on our day is the greatest gift. However, if you wish to contribute, <Link href="https://www.honeyfund.com/site/olson-hetzer-11-08-2025" target="_blank" className="registry__link">Ben and Charlotte's honeyfund</Link> is available.
           </Typography>
         </div>
 

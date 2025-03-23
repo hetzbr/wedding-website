@@ -14,11 +14,11 @@ const GettingThere: React.FC = () => {
             </Typography>
             <Typography variant="h5">Hyatt Downtown</Typography>
             <Typography variant="body1">
-              We're currently in the process of finalizing a hotel block at the&nbsp;
-              <Link href="https://www.hyatt.com/hyatt-place/en-US/mspzd-hyatt-place-minneapolis-downtown" target="_blank" className="getting-there__link">
+              We booked a hotel block at the&nbsp;
+              <Link href="https://www.hyatt.com/en-US/hotel/minnesota/hyatt-place-minneapolis-downtown/mspzd?corp_id=G-osln" target="_blank">
                 Hyatt Place Minneapolis/Downtown
               </Link>
-              . Please check back at a later date to reserve your room!
+              . Use code G-OSLN for the group code (must be all capitals) when booking.
             </Typography>
           </div>
           <div className="right-column">

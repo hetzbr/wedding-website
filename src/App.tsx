@@ -3,6 +3,7 @@ import HeroSection from './HeroSection';
 import WeddingDetails from './WeddingDetails';
 import GettingThere from './GettingThere';
 import Registry from './Registry';
+import Schedule from './Schedule';
 import Footer from './Footer';
 
 const App: React.FC = () => {
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <HeroSection />
       <WeddingDetails />
       <GettingThere />
+      <Schedule />
       <Registry />
     </div>
   );
