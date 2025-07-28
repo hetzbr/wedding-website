@@ -87,7 +87,8 @@ const RSVP: React.FC = () => {
         formspreeData.append('plus_one_dietary_restrictions', formData.plusOneDietaryRestrictions);
       }
 
-      const formspreeResponse = await fetch('https://formspree.io/f/xovlwvzk', {
+      const formspreeResponse = await fetch('https://formspree.io/f/xdkdzkbk', {
+      // const formspreeResponse = await fetch('https://formspree.io/f/xovlwvzk', {
         method: 'POST',
         body: formspreeData,
         headers: {
@@ -119,12 +120,14 @@ const RSVP: React.FC = () => {
   return (
     <Box className="rsvp">
       <div className="content">
+      {submitStatus !== 'success' && (
         <div className="left-column">
           <Typography variant="h3">RSVP</Typography>
           <Typography variant="body1">
             Please let us know if you can join us for our special day!
           </Typography>
         </div>
+      )}
         <div className="right-column">
           {submitStatus === 'success' ? (
             <Paper elevation={3} sx={{
