@@ -87,8 +87,8 @@ const RSVP: React.FC = () => {
         formspreeData.append('plus_one_dietary_restrictions', formData.plusOneDietaryRestrictions);
       }
 
-      const formspreeResponse = await fetch('https://formspree.io/f/xdkdzkbk', {
-      // const formspreeResponse = await fetch('https://formspree.io/f/xovlwvzk', {
+      // const formspreeResponse = await fetch('https://formspree.io/f/xdkdzkbk', {
+      const formspreeResponse = await fetch('https://formspree.io/f/xovlwvzk', {
         method: 'POST',
         body: formspreeData,
         headers: {
