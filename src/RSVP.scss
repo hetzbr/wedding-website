@@ -1,0 +1,232 @@
+$primary-color: #122a45;
+$accent-color: #FFF;
+$font-family-default: 'fraunces', sans-serif;
+$font-family-header: 'Great Vibes', cursive;
+
+.rsvp {
+  padding: 4rem 2rem;
+  background-color: $primary-color;
+  color: $accent-color;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 690px;
+  transition: min-height 0.3s ease;
+  margin-bottom: 0;
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      text-align: left
+    }
+  }
+
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+
+  h3 {
+    font-family: $font-family-header;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: $accent-color;
+  }
+
+  h5 {
+    font-family: $font-family-default;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: $accent-color;
+  }
+
+  h6 {
+    font-family: $font-family-default;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: $accent-color;
+  }
+
+  p {
+    font-family: $font-family-default;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $accent-color;
+  }
+
+  .right-column {
+    padding-left: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 16px;
+    min-height: auto;
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .left-column,
+    .right-column {
+      flex: 1;
+      margin-bottom: 1rem;
+    }
+
+    .right-column {
+      padding-left: 0;
+    }
+
+    .MuiPaper-root {
+      padding: 2rem 1.5rem;
+      margin: 0;
+    }
+
+    .MuiGrid-container {
+      gap: 0.5rem;
+    }
+
+    .MuiGrid-item {
+      padding-bottom: 0.5rem;
+    }
+
+    .MuiTextField-root,
+    .MuiFormControl-root {
+      .MuiOutlinedInput-root {
+        font-size: 16px;
+      }
+    }
+
+    .MuiButton-root {
+      margin-top: 0.5rem;
+      padding: 12px 20px;
+      font-size: 1rem;
+    }
+
+    .MuiDivider-root {
+      margin: 2px 0;
+    }
+
+    .MuiFormControlLabel-root {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .MuiPaper-root {
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .MuiTextField-root,
+  .MuiFormControl-root {
+    .MuiOutlinedInput-root {
+      border-radius: 8px;
+
+      &:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(18, 42, 69, 0.5);
+      }
+
+      &.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  .MuiButton-root {
+    border-radius: 8px;
+    text-transform: none;
+    font-family: $font-family-default;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+
+  .MuiFormControlLabel-root {
+    .MuiFormControlLabel-label {
+      font-family: $font-family-default;
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+
+  .MuiFormControlLabel-root {
+    margin: 0;
+    padding: 0;
+  }
+
+  .plus-one-section .MuiGrid-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .plus-one-section .MuiDivider-root {
+    margin: 2px 0;
+  }
+
+  .MuiDivider-root {
+    margin: 2px 0;
+  }
+
+  .MuiTypography-h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .plus-one-section .MuiTypography-h6 {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+
+  .guest-divider {
+    margin: 8px 0;
+  }
+
+  .guest-info-heading {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    color: #122a45;
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .guest-info-heading {
+      margin-top: 20px;
+      padding-bottom: 0;
+    }
+  }
+
+  .MuiDivider-root {
+    margin: 16px 0;
+    border-color: rgba(18, 42, 69, 0.6);
+  }
+
+  .right-column .MuiTypography-root {
+    color: #122a45;
+  }
+
+  .MuiTypography-h6 {
+    color: #122a45;
+  }
+}
