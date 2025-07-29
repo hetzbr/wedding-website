@@ -15,7 +15,7 @@ const GettingThere: React.FC = () => {
             <Typography variant="h5">Hyatt Downtown</Typography>
             <Typography variant="body1">
               We booked a hotel block at the&nbsp;
-              <Link href="https://www.hyatt.com/en-US/hotel/minnesota/hyatt-place-minneapolis-downtown/mspzd?corp_id=G-osln" target="_blank">
+              <Link href="https://www.hyatt.com/en-US/hotel/minnesota/hyatt-place-minneapolis-downtown/mspzd?corp_id=G-OLSN" target="_blank">
                 Hyatt Place Minneapolis/Downtown
               </Link>
               . Use code G-OLSN for the group code (must be all capitals) when booking.
