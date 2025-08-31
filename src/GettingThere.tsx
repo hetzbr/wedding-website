@@ -20,6 +20,9 @@ const GettingThere: React.FC = () => {
               </Link>
               . Use code G-OLSN for the group code (must be all capitals) when booking.
             </Typography>
+            <Typography variant="body1" className="booking-deadline">
+              ⏰ Please book your room by <strong>September 15th</strong> to ensure you get the group rate and one of our reserved blocks of rooms!
+            </Typography>
           </div>
           <div className="right-column">
             <Box className="getting-there-right">
