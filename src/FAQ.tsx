@@ -10,6 +10,8 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './FAQ.scss';
 
+const baseURL = '/';
+
 const FAQ: React.FC = () => {
   return (
     <Box className="faq">
@@ -92,7 +94,7 @@ const FAQ: React.FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                We'll be sharing more specific details as we get closer to the big day!
+                Please check the <Link href={`${baseURL}images/wedding-schedule.PNG`} target="_blank" className="faq-link">Saturday wedding schedule</Link>&nbsp; for details
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -107,7 +109,7 @@ const FAQ: React.FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                All are invited to join us for a welcome party at <Link href="https://www.sociablecider.com" target="_blank" className="faq-link">Sociable Cider Werks</Link>. We have the event space from 6pm-9pm. Dinner will be provided, cash bar is available to purchase drinks. While we won't have shuttles running, there's ample parking and convenient drop-off spots right at the venue.
+                All are invited to join us for a welcome party at <Link href="https://www.sociablecider.com" target="_blank" className="faq-link">Sociable Cider Werks</Link>. We have the event space from 6pm-9pm. Dinner will be provided, cash bar is available to purchase drinks. While we won't have shuttles running, there's ample parking and convenient drop-off spots right at the venue. Dress code is "dressy casual"
               </Typography>
             </AccordionDetails>
           </Accordion>
