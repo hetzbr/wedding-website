@@ -94,7 +94,7 @@ const FAQ: React.FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                Please check the <Link href={`${baseURL}images/wedding-schedule.PNG`} target="_blank" className="faq-link">Saturday wedding schedule</Link>&nbsp; for details
+                Please check the <Link href={`${baseURL}images/wedding-schedule.PNG`} target="_blank" className="faq-link">Saturday wedding schedule</Link>&nbsp;for details
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -139,7 +139,7 @@ const FAQ: React.FC = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                We're very excited about the food we're having cooked by the Copper Hen. It will be family style, so we'll have a variety of dishes to choose from. More details will be shared closer to the wedding.
+                We're very excited about the food we're having cooked by the Copper Hen. It will be family style, so we'll have a variety of dishes to choose from. Please checkout the <Link href={`${baseURL}images/wedding-menu.jpg`} target="_blank" className="faq-link">Wedding dinner menu</Link>&nbsp;for an overview of the dinner food. In addition, there will be appetizers at cocktail hour
               </Typography>
             </AccordionDetails>
           </Accordion>
